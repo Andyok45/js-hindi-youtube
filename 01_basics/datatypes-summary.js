@@ -23,3 +23,23 @@ const myFunction = function(){
 }
 
 console.log(myObj);
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubeName = "Anshchannel"
+
+let anothername = myYoutubeName
+anothername = "anshAurMinnie"
+
+console.log(myYoutubeName);
+console.log(anothername);
+
+let userOne = {
+    email: "andy@gmail.com",
+    upi: "user@ybl",
+}
+
+let userTwo = userOne
+// in Heap original value changes while in stack copy is given and that changes
