@@ -12,6 +12,8 @@ console.log(accountId) ;
 
 /*
 Prefer not use var 
-bcoz of issue in block scope and functional scope   
+bcoz of issue in block scope 
+(block scopes means the curly brackets we have in a for loop and while loop within which a copy was changed and when recalled out of function it stayed the same as it was before block but in JS if we initialise something by var then if changed in block even then it changed the initial value)
+and functional scope   
 */
 console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
