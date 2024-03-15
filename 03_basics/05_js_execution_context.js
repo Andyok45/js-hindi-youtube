@@ -3,7 +3,7 @@
 
 //  Global EC
 // Functional EC 
-// In monngoose Eval EC
+// In mongoose -> Eval EC
 // {} runs in two phases -> One is memory creation phase (or creation phase) -> in this memory allocation is done 
 //                          Second is Execution Phase  -> in this all the execution is done (like addition subtraction)
 
