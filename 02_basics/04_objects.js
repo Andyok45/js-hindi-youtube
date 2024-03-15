@@ -44,6 +44,7 @@ console.log(tinderUser);
 console.log(Object.keys(tinderUser));
 console.log(Object.values(tinderUser));
 console.log(Oject.entries(tinderUser));
+// in entries each keys and values is taken in as an array in an complete array
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
