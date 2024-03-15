@@ -31,7 +31,7 @@ function addTwoNumbers(numb1 , numb2){
     console.log("Ansh") // this code is not executed as it is written after return
 }
 
-function loginUserMessage(username = "sam"){
+function loginUserMessage(username = "sam"){     // we give a default value to avoid undefined and if user inputs value then it will overwrite sam 
     if(username === undefined){
         console.log("Please enter a username");
         return
