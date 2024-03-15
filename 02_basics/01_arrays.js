@@ -12,7 +12,7 @@ myArr.pop()
 // removes the last element from the array
 
 myArr.unshift(9)
-// to add 9 in starting of the array
+// to add 9 in starting of the array, for 10k values when each value moves forward so load on computer
 myArr.shift()
 // removes the starting element of the array
 
@@ -24,7 +24,7 @@ console.log(myArr.indexOf(3));
 const newArr = myArr.join()
 console.log(myArr);
 console.log(newArr);
-// join changes the type from array to string 
+// join changes the type from array to string, joins the array as a string
 
 // slice, splice
 
