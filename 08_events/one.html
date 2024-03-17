@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log(e);
+        e.stopPropagation()   // it stops the bubbling or capturing 
+    }, false) // if i write true in place of false then event capturing will happen 
+    // event capturing means if ul images have different output and ul owl has different then if we write false, which means event bubbling then first owl will print then images due to bubbling
+    // reverse happens if i write true 
+
+    document.getElementById('google').addEventListener
+    ('click', function(e){
+        e.preventDefault(); // prevents default function of the function that is in this case going back to google site 
+        e.stopPropagation()
+        console.log("google clicked")
+    })
+
+    document.querySelector('#images').addEventListener
+    ('click', function(e){
+        console.log(e.target.parentNode);
+        if(e.target.tagName === 'IMG'){
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+        
+    })
+
+</script>
+</html>
