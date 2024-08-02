@@ -26,9 +26,10 @@ JsUser.greeting = function(){
     console.log("Hello Js user");
 }
 JsUser.greetingTwo = function(){
-    console.log(`Hello Js user, ${this.name}`)
+    console.log(`Hello Js user, ${this.name}`) // putting the text in `` is called string interpolation
 }
-console.log(JsUser.greeting());
+console.log(JsUser.greeting()); // Hello Js user, ansh
+console.log(JSUser.greeting);   // [function (anonymous)]
 
 
 
