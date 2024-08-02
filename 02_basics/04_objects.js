@@ -56,6 +56,8 @@ const course = {
     courseInstructor: "hitesh"
 }
 
+// destructuring 
+
 // course.courseInstructor
 const {courseInstructor: instructor} = course 
 
