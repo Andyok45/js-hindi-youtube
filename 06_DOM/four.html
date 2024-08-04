@@ -18,7 +18,7 @@
         li.innerHTML = `${langName}`
         document.querySelector('.language')
         appendChild(li)
-    }
+    }  // in this approach you need to traverse the whole tree so when adding 1000 or 10000th element it takes time and some issue
 
     addLanguage("python")
     addLanguage("typescript")
@@ -27,14 +27,14 @@
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(langName))
         document.querySelector('.language').appendChild(li)
-    }
+    }  // this is the optimized way of adding element 
     addOptiLanguage('goLang')
 
     // Edit 
-    const secondLang = document.querySelector("li: nth-child(2)")
-    document.createElement('li')
-    newli.textContent = "Mojo"
-    secondLang.replaceWith(newli)
+    const secondLang = document.querySelector("li: nth-child(2)") // selecting second lang which is python
+    const newli = document.createElement('li') // creating element of li 
+    newli.textContent = "Mojo" // content added to the newly created element 
+    secondLang.replaceWith(newli) // replaces secondlang with newli
 
     // edit
     const firstLang = document.querySelector("li:first-child")
