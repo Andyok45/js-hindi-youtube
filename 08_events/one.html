@@ -19,11 +19,14 @@
     }, false) // if i write true in place of false then event capturing will happen 
     // event capturing means if ul images have different output and ul owl has different then if we write false, which means event bubbling then first owl will print then images due to bubbling
     // reverse happens if i write true 
+    // it is called bubbling and capturing event 
+    // bubbing :- from inside to out, i.e first owl clicked then ul clicked 
+    // capturing :- from outside to inside, i.e first ul clicked and then owl clicked
 
     document.getElementById('google').addEventListener
     ('click', function(e){
         e.preventDefault(); // prevents default function of the function that is in this case going back to google site 
-        e.stopPropagation()
+        e.stopPropagation() // in bubbling it prints owl clicked but does not go on ul clicked... it stays on one... stops propagation 
         console.log("google clicked")
     })
 
